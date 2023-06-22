@@ -1,1 +1,1 @@
-<svg width="300" height="200"><polygon points="150,18 244,182 56,182" fill='ORANGE' /><text x="150" y="125" fill="YELLOW">SVG</text> </svg>
+<svg width="300" height="200"> <circle cx="150" cy="100" r="80"   fill='blue' /><text x="150" y="125" text-anchor="middle" fill="green">SVG</text> </svg>
