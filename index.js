@@ -35,22 +35,22 @@ const questions = ()=>{
             name: "shape_color",
             message: "Enter the color of the shape"
         }
-    ]).then((responses)=>{
+    ]).then((responses) => {
         let logo;
-        switch(responses.shape){
-            case "circle":
-                logo= new Circle()
-                break;
-            case "triangle":
-                logo=new Triangle()
-                break;
-            case "Square":
-                logo=new Square()
-                break;     
+        switch (responses.shape) {
+          case "circle":
+            logo = new Circle();
+            break;
+          case "triangle":
+            logo = new Triangle();
+            break;
+          case "square":
+            logo = new Square();
+            break;
         }
-        logo.setColor(responses.shape_color)
-        const myLogo=new SVG()
-        myLogo.setShape(logo)
+        logo.setColor(responses.shape_color);
+        const myLogo = new SVG();
+        myLogo.setShape(logo);
         myLogo.setText(responses.title,responses.title_color)
         
         if(responses.title.length>3){
