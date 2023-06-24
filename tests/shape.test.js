@@ -5,7 +5,7 @@ const Triangle = require("../lib/triangle")
 describe("Circle",()=>{
     test ("renders circle blue",()=>{
         const shape=new Circle()
-        const e=` <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill='blue' />`
+        const e=` <circle cx=\"150\" cy=\"100\" r=\"80\"  fill='blue' />`
         shape.setColor("blue")
         expect(shape.render()).toEqual(e)
     })
