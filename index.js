@@ -17,17 +17,17 @@ const questions = ()=>{
         {
             type: "input",
             name: "title",
-            message: "Enter the text"
+            message: "Enter title"
         },
         {
             type: "input",
             name: "title_color",
-            message: "Enter the text color"
+            message: "Enter title color"
         },
         {
             type: "list",
             name: "shape",
-            message: "Select the shape",
+            message: "Select shape",
             choices: ["circle", "triangle","square"],
         },
         {
