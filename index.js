@@ -17,17 +17,17 @@ const questions = ()=>{
         {
             type: "input",
             name: "title",
-            message: "Enter title"
+            message: "Enter the text"
         },
         {
             type: "input",
             name: "title_color",
-            message: "Enter title color"
+            message: "Enter the text color"
         },
         {
             type: "list",
             name: "shape",
-            message: "Select shape",
+            message: "Select the shape",
             choices: ["circle", "triangle","square"],
         },
         {
@@ -36,21 +36,21 @@ const questions = ()=>{
             message: "Enter the color of the shape"
         }
     ]).then((responses) => {
-        let logo;
-        switch (responses.shape) {
-          case "circle":
-            logo = new Circle();
-            break;
-          case "triangle":
-            logo = new Triangle();
-            break;
-          case "square":
-            logo = new Square();
-            break;
-        }
-        logo.setColor(responses.shape_color);
-        const myLogo = new SVG();
-        myLogo.setShape(logo);
+      let logo;
+      switch (responses.shape) {
+        case "circle":
+          logo = new Circle();
+          break;
+        case "triangle":
+          logo = new Triangle();
+          break;
+        case "square":
+          logo = new Square();
+          break;
+      }
+      logo.setColor(responses.shape_color);
+      const myLogo = new SVG();
+      myLogo.setShape(logo);
         myLogo.setText(responses.title,responses.title_color)
         
         if(responses.title.length>3){
@@ -66,3 +66,10 @@ questions()
     
 
 
+// function init(){
+//     inqiurer.prompt(questions).then(data=>{
+//         let svgLogo=new Shape(data.title,data.title_color,data.shape,data.shape_color)
+//         writeFile('logo.svg',svgLogo.render())
+//     })
+// }
+// init()
