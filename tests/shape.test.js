@@ -14,7 +14,7 @@ describe("Circle",()=>{
 describe("Square",()=>{
     test("renders blue square",()=>{
 const shape= new Square()
-const e=`<rect x="50" y="50" width="100" height="100" fill="blue" />`
+const e=`<rect x="90" y="40" width="120" height="120" fill="blue" />`
 shape.setColor("blue")
 expect(shape.render()).toEqual(e)
     })
