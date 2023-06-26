@@ -7,4 +7,4 @@ This application allows web developers to create custom logos without hiring a g
 To run this application, use the command line to navigate to the directory of the application, install all the dependencies (npm i), then type the  'node index.js'. You will then be taken through a series of questions. Once all questions have been answered correctly a message will display to the command line telling you your logo has been generated. Find your new logo in the newly generated SVG file.
 
 Below I have linked a video on how to use application
-https://drive.google.com/file/d/1DkNqlDhdahai8znpx0lWbVLBqhVq2wmc/view 
+https://drive.google.com/file/d/1ch_JxexurXsCY2Pmyys-9f4Qlhq5EG3a/view 
